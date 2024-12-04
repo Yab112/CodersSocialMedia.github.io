@@ -7,21 +7,45 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "cypress:open": "cypress open",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cross-env ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 npx cypress run\"",
+    "component:headless": "cypress run --component",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic:component": "npx chromatic --project-token=chpt_7cdf5ce6cdc34b9",
+    "chromatic:cypress": "npx chromatic --cypress --project-token=chpt_c5360faf914c70a"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.1",
-    "@fortawesome/free-solid-svg-icons": "^6.7.1",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
-    "nuxt": "^3.14.1592",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@storybook-vue/nuxt": "^8.3.1",
+    "nuxt": "^3.13.0",
+    "start-server-and-test": "^2.0.8",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "devDependencies": {
-    "@nuxtjs/color-mode": "^3.5.2",
+    "@chromatic-com/cypress": "^0.8.0",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@nuxtjs/storybook": "^8.3.1",
+    "@storybook/addon-essentials": "8.3.5",
+    "@storybook/addon-interactions": "8.3.5",
+    "@storybook/addon-links": "8.3.5",
+    "@storybook/blocks": "8.3.5",
+    "@storybook/builder-vite": "8.3.5",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue3": "8.3.5",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15"
-  }
+    "chromatic": "^11.12.0",
+    "cross-env": "^7.0.3",
+    "cypress": "^13.15.0",
+    "postcss": "^8.4.47",
+    "storybook": "8.3.5",
+    "tailwindcss": "^3.4.13"
+  },
+  "version": "",
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
 }

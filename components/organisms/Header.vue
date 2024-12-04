@@ -38,6 +38,17 @@
     const toggleDarkMode = () => {
       colorMode.preference = colorMode.value === 'light' ? 'dark' : 'light'; 
     };
+    
+    defineProps({
+      categoryItems: {
+        type: Array,
+        required: false,
+      },
+      selectedItems: {
+        type: Array,
+        required: false,
+      },
+    });
 
 const categoryItems = [
   { value: 'python', label: 'Python' },

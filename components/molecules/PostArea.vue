@@ -32,7 +32,7 @@ const tags = [
     { icon: ['fas', 'hashtag'], label: 'JavaScript' }
 ]
 const reaction = [
-    { icon: ['fas', 'thumbs-up'], label: '12' },
+    { icon: ['fas', 'heart'], label: '12' },
     { icon: ['fas', 'comment'], label: '2' },
     { icon: ['fas', 'share'], label: '3' }
 ]   

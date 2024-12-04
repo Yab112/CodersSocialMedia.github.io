@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       autoprefixer: {}, 
     },
   },
-  modules: ['@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/storybook'],
   colorMode: {
     classSuffix: '', // Add `dark` class to the root HTML element
     preference: 'system', // Follow system preference or fallback

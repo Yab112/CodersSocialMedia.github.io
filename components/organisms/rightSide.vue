@@ -19,6 +19,19 @@
   <script setup lang="ts">
   import Suggestions from '../molecules/Suggestions.vue';
   import SuggestionsCourse from '../molecules/SuggestionsCourse.vue';
+  
+  defineProps({
+    
+    suggestions:{
+      type: Array,
+      required: false,
+    },
+    courseSuggestions:{
+      type:Array,
+      required: false,
+    }
+
+  })
   </script>
   
   <style scoped>

@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :to="to" class="flex items-center space-x-3 hover:text-gray-500 justify-start p-1 ">
+  <NuxtLink :to="to" class="flex items-center space-x-3 hover:text-gray-500 justify-start p-1 mt-14 ">
     <Icon :icon="icon" class="text-gray-500 my-auto cursor-pointer"/>
     <Text :text="text" class="class" />
   </NuxtLink>
@@ -12,7 +12,7 @@ import Text from "../atoms/Text.vue";
 defineProps({
   to: {
     type: String,
-    required: true,
+    required: false,
   },
   icon: {
     type: [Array, String],

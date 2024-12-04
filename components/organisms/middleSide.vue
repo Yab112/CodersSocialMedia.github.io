@@ -11,6 +11,21 @@
 
 <script setup lang="ts">
 
+defineProps({
+    codeString: {
+      type: String,
+      required: false,
+    },
+    icon: {
+      type: Array,
+      required: false,
+    },
+    text: {
+      type: String,
+      required: false,
+    },
+})
+
 const codeString = `import pandas as pd
 import matplotlib.pyplot as plt
 

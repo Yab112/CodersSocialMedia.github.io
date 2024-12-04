@@ -15,7 +15,8 @@
     customStyles: {
       type: Object,
       default: () => ({}),
-    },
+    }
+
   });
   </script>
   

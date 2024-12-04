@@ -25,7 +25,7 @@
   
       <Text
         :text="`See All`"
-        class="text-sm font-bold text-gray-600 dark:text-gray-900 ml-2 cursor-pointer hover:text-slate-100"
+        class="text-[12px] font-bold text-gray-600 dark:text-gray-900 ml-2 cursor-pointer hover:text-slate-100"
       />
     </div>
   </template>

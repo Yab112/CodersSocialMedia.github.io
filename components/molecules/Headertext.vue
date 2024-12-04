@@ -18,6 +18,10 @@ defineProps({
         type: String,
         required: true,
     },
+    customClass: {
+        type: String,
+        required: false,
+    },
 });
 
 </script>
